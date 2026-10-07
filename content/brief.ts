@@ -8,7 +8,7 @@ export type BriefSection = {
 }
 
 export const briefIntro =
-  "Brief para dibujar el símbolo de Cálamo. La estrategia, la paleta y la tipografía ya están decididas. El encargo es el isotipo, el wordmark y las aplicaciones. No hace falta proponer otra personalidad."
+  "Brief para dibujar el símbolo de Mirra. La estrategia, la paleta y la tipografía ya están decididas. El encargo es el isotipo, el wordmark y las aplicaciones. No hace falta proponer otra personalidad ni otra paleta."
 
 export const briefSections: BriefSection[] = [
   {
@@ -16,11 +16,11 @@ export const briefSections: BriefSection[] = [
     blocks: [
       {
         type: "p",
-        text: "Cálamo es una casa de perfume en español. Vende dos categorías con la misma seriedad: perfumes de diseñador (Sala Firma) y perfumes de casas árabes (Sala Qalam). No es una maison francesa de mentira ni un bazar disfrazado. Existe porque ese mercado, en América Latina, está lleno de tiendas negro y oro que tratan lo árabe como oferta y lo europeo como trofeo.",
+        text: "Mirra es una casa de perfume en español. Vende dos categorías con la misma seriedad: perfumes de diseñador (Sala Firma) y perfumes de casas árabes (Sala Attar). El lujo de esta marca es en voz baja: elegante, cercano, sin dorado de más y sin disfraz de París ni de zoco.",
       },
       {
         type: "p",
-        text: "Idioma de todas las piezas: español. El árabe se escribe solo cuando es una palabra real —قلم, el nombre de una casa, un material que se dice así—. Nunca como ornamentación.",
+        text: "Idioma de todas las piezas: español. El árabe se escribe solo cuando es una palabra real —مُرّ, el nombre de una casa, un material que se dice así—. Nunca como ornamentación.",
       },
     ],
   },
@@ -30,12 +30,12 @@ export const briefSections: BriefSection[] = [
       {
         type: "ul",
         items: [
-          "Escritura correcta: Cálamo. Con acento.",
-          "Pronunciación: CÁ-la-mo. Tres sílabas, fuerza en la primera.",
-          "No se dice «la Cálamo». Se dice «Cálamo», como una casa: «en Cálamo».",
+          "Escritura correcta: Mirra. Sin acento. Con erre fuerte.",
+          "Pronunciación: MI-rra. Dos sílabas, fuerza en la primera.",
+          "No se dice «la Mirra». Se dice «Mirra», como una casa: «en Mirra».",
           "En piezas comerciales el nombre va con la categoría «casa de perfume», salvo en el sello chico de una caja que ya dice perfume.",
-          "En árabe, la misma caña se llama qalam y se escribe قلم. Pronunciación para el equipo: ká-lam. Puede acompañar al símbolo como leyenda, no como adorno.",
-          "Hasta que el isotipo exista, la marca pública es la palabra Cálamo en Fraunces. No se inventa un logo provisorio.",
+          "En árabe, la misma resina se llama murr y se escribe مُرّ. Puede acompañar al símbolo como leyenda, no como adorno.",
+          "Hasta que el isotipo exista, la marca pública es la palabra Mirra en Cormorant Garamond. No se inventa un logo provisorio.",
         ],
       },
     ],
@@ -45,15 +45,15 @@ export const briefSections: BriefSection[] = [
     blocks: [
       {
         type: "p",
-        text: "Un cálamo es una caña hueca, cortada en diagonal, con la que se escribía a mano. El español «cálamo» viene del latín calamus, y ese del griego kálamos. El árabe qalam (قلم) nombra esa misma caña: llegó desde el griego. No es un juego de letras. Las dos tradiciones de esta tienda escribieron con el mismo instrumento.",
+        text: "La mirra es una resina. Viajó desde el sur de Arabia hasta la perfumería europea y se quedó en las dos tradiciones que esta tienda vende. No brilla. Huele, y se queda. El español mirra y el árabe murr (مُرّ) son la misma materia.",
       },
       {
         type: "p",
-        text: "El isotipo es esa caña vista en corte: un círculo hueco (el tubo) y un solo corte (la punta). El corte es el único lugar donde entra el azafrán. El resto del símbolo vive en cardenillo o en tinta. En la versión de una sola tinta, el corte es el vacío: no se simula el azafrán con un gris.",
+        text: "El isotipo es esa resina como joya en voz baja: un cabujón de granate (piedra pulida, sin facetas de brillantina) sostenido por un engarce de bronce mate. El bronce es el único metal del símbolo. No hay diamante, ni corona, ni gota de perfume.",
       },
       {
         type: "p",
-        text: "En el manual hay un estudio geométrico —arco abierto hacia abajo a la derecha, corte en diagonal—. Es una hipótesis para alinear la idea. Si aparece una caña más simple o más memorable, se sigue. Lo que no se negocia: caña hueca, un solo corte, azafrán solo ahí, y lectura clara a 16 px.",
+        text: "En el manual hay un estudio: una elipse granate y un arco de bronce debajo, como la montura que abraza la piedra. Es una hipótesis. Si aparece un cabujón más simple o más memorable, se sigue. Lo que no se negocia: una sola piedra, un solo metal mate, nada de foil, y lectura clara a 16 px.",
       },
     ],
   },
@@ -63,14 +63,12 @@ export const briefSections: BriefSection[] = [
       {
         type: "ul",
         items: [
-          "No es un monograma, una gota ni un frasco.",
-          "No es una corona, un laurel, un diamante, un león ni un escudo.",
-          "No es caligrafía árabe decorativa, ni una frase árabe que el equipo no pueda leer.",
-          "No es geometría islámica usada como disfraz.",
-          "No lleva mármol, humo, destellos ni foil de oro como requisito.",
-          "No va en script inglesa ni en un Didot de vitrina.",
-          "No se le quita el acento a la Á.",
-          "La versión principal del wordmark no va en mayúsculas. «CÁLAMO» en caja alta solo se permite como filete muy chico, con tracking amplio.",
+          "No es una gota, un frasco ni una corona.",
+          "No es un diamante facetado, un brillante ni un monograma con laurel.",
+          "No es caligrafía árabe decorativa.",
+          "No lleva mármol, humo, destellos, glitter ni foil de oro.",
+          "No va en script inglesa ni en mayúsculas como versión principal.",
+          "El dorado no es un color de relleno. El metal, si aparece, es bronce mate y es una línea.",
         ],
       },
     ],
@@ -81,11 +79,12 @@ export const briefSections: BriefSection[] = [
       {
         type: "ul",
         items: [
-          "Fuente: Fraunces, romana, no itálica.",
-          "Caja: «Cálamo», mayúscula inicial, acento visible.",
-          "Peso aproximado: 520 a 620. Tracking ligeramente negativo.",
-          "El acento es parte del dibujo. No se pinta de otro color: el cardenillo vive en el isotipo, no en una letra suelta.",
+          "Fuente: Cormorant Garamond, romana, peso 600.",
+          "Caja: «Mirra», mayúscula inicial. No «MIRRA».",
+          "Tracking ligeramente abierto o neutro. Esta letra no se aprieta hasta que las erres se peguen.",
+          "El color del wordmark es ónix, o crema cuando el fondo es ónix. El granate vive en el isotipo, no en una letra pintada.",
           "Debajo, en Outfit, caja alta, tracking amplio, tamaño pequeño: CASA DE PERFUME.",
+          "La itálica se reserva para la frase «Lujo en voz baja». No para el logo.",
         ],
       },
     ],
@@ -96,14 +95,14 @@ export const briefSections: BriefSection[] = [
       {
         type: "ul",
         items: [
-          "Isotipo a color: cardenillo con el corte en azafrán.",
-          "Isotipo a una tinta, sobre papel y en reversa.",
+          "Isotipo a color: granate con engarce en bronce mate.",
+          "Isotipo a una tinta, sobre marfil y en reversa sobre ónix.",
           "Wordmark solo.",
           "Lockup horizontal: isotipo, wordmark y «casa de perfume».",
           "Lockup vertical.",
           "Favicon y avatar. Tiene que leerse a 16 px y a 32 px.",
           "Sello de caja: isotipo chico, sin slogan.",
-          "Aplicaciones de muestra, no una biblia: avatar, encabezado de tienda, cara de caja, tarjeta de lectura (salida, corazón, fondo) y una plantilla de historia.",
+          "Aplicaciones de muestra: avatar, encabezado de tienda, cara de caja, tarjeta de lectura y una plantilla de historia.",
         ],
       },
     ],
@@ -113,26 +112,26 @@ export const briefSections: BriefSection[] = [
     blocks: [
       {
         type: "p",
-        text: "No propongas otra paleta. Cuatro colores se recuerdan. Los demás sostienen la lectura o etiquetan una sala.",
+        text: "No propongas otra paleta. Cuatro colores se recuerdan. El lujo está en la proporción: mucho marfil, ónix para escribir, granate en poca cantidad, bronce en un hilo.",
       },
       {
         type: "ul",
         items: [
-          "Papel de tira #E6D9C8 — fondo principal.",
-          "Tinta de agallas #1A1613 — texto y wordmark.",
-          "Cardenillo #0E6B5E — color firma, isotipo, botones.",
-          "Azafrán #C6531F — solo el corte, un hilo, un sello. Una vez por pieza.",
-          "Hueso #F3EEE6 — fichas y reverso.",
-          "Caña #CDBFA6 — filetes y fondos quietos.",
-          "Humo #524A43 — texto secundario sobre papel.",
-          "Cardenillo profundo #085248 — enlaces y texto chico sobre papel.",
-          "Resina #7A3140 — rótulo de la Sala Qalam, nada más.",
-          "Azul de hiel #2C384C — rótulo de la Sala Firma, nada más.",
+          "Marfil #F3EEE6 — fondo principal.",
+          "Ónix #12100E — texto y wordmark.",
+          "Granate #6B2434 — color firma, isotipo, botones.",
+          "Bronce mate #8F785C — solo un hilo, un engarce, un filete. Nunca un fondo. Nunca foil.",
+          "Crema #FBF8F4 — fichas y reverso.",
+          "Piedra #D4CBBF — filetes y fondos quietos.",
+          "Sombra #5E564E — texto secundario sobre marfil.",
+          "Granate profundo #5C1E2C — enlaces y texto chico sobre marfil.",
+          "Cuero #5C4038 — rótulo de la Sala Attar, nada más.",
+          "Noche #1C2433 — rótulo de la Sala Firma, nada más.",
         ],
       },
       {
         type: "p",
-        text: "Proporción aproximada: sesenta por ciento papel, veinticinco tinta, diez cardenillo. El azafrán aparece una sola vez. Resina y hiel no pintan pantallas enteras: identifican la sala en una etiqueta.",
+        text: "Proporción aproximada: sesenta y cinco por ciento marfil, veinticinco ónix, ocho granate. El bronce aparece una sola vez por pieza. Si una mockup se puede describir como dorada, está mal.",
       },
     ],
   },
@@ -142,7 +141,7 @@ export const briefSections: BriefSection[] = [
       {
         type: "ul",
         items: [
-          "Display y wordmark: Fraunces.",
+          "Display y wordmark: Cormorant Garamond.",
           "Texto largo: Literata.",
           "Interfaz, precios, navegación: Outfit.",
           "Datos de fórmula (EDP, mililitros, notas técnicas): DM Mono.",
@@ -151,7 +150,7 @@ export const briefSections: BriefSection[] = [
       },
       {
         type: "p",
-        text: "No sustituyas Fraunces por Didot, Playfair o una script. Fraunces tiene el terminal blando de la tinta que se abre en el papel. Un Didot sería la firma de otra marca.",
+        text: "Cormorant se usa en romana para el nombre y los titulares. La itálica es una frase, no el sistema. No la cambies por una script, ni por un Didot más flaco, ni por Playfair.",
       },
     ],
   },
@@ -160,7 +159,7 @@ export const briefSections: BriefSection[] = [
     blocks: [
       {
         type: "p",
-        text: "Sobre papel de tira, no sobre mármol. Si hay packaging: cartón sin estucar, impresión en tinta, cierre con un hilo color azafrán. Nada de foil. Las dos salas se fotografían con la misma luz. Un frasco árabe no va sobre un tapete «exótico» si el de diseñador va sobre mármol: los dos van sobre la misma mesa.",
+        text: "Sobre marfil, yeso cálido o lino. No sobre mármol veteado ni sobre negro con oro. Si hay packaging: caja mate color marfil, impresión en ónix, sello granate, cierre con un hilo de bronce mate. Nada de foil. Las dos salas se fotografían con la misma luz y el mismo fondo.",
       },
     ],
   },
@@ -169,7 +168,7 @@ export const briefSections: BriefSection[] = [
     blocks: [
       {
         type: "p",
-        text: "El estudio del manual alinea la idea. El dibujo puede alejarse de esa geometría. No puede alejarse de la caña, del corte único, del azafrán escaso, del acento en la Á, ni de esta paleta.",
+        text: "El estudio del manual alinea la idea. El dibujo puede alejarse de esa elipse. No puede alejarse de la piedra única, del metal mate y escaso, del wordmark en Cormorant, ni de esta paleta.",
       },
     ],
   },
@@ -177,7 +176,7 @@ export const briefSections: BriefSection[] = [
 
 export function briefToMarkdown(): string {
   const lines: string[] = [
-    "# Brief de identidad visual — Cálamo",
+    "# Brief de identidad visual — Mirra",
     "",
     briefIntro,
     "",
@@ -198,7 +197,7 @@ export function briefToMarkdown(): string {
   lines.push(
     "---",
     "",
-    "Manual de identidad, versión 1. El símbolo todavía no está dibujado: este documento es el encargo.",
+    "Manual de identidad, versión 2. El símbolo todavía no está dibujado: este documento es el encargo.",
     "",
   )
 

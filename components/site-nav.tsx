@@ -87,8 +87,8 @@ export function SiteNav() {
       </a>
 
       <header className="no-print fixed inset-x-0 top-0 z-40 flex h-14 items-center justify-between gap-3 border-b border-tinta/10 bg-papel/90 px-4 backdrop-blur-md xl:hidden">
-        <a href="#portada" className="font-display text-[1.65rem] leading-none tracking-[-0.03em]">
-          Cálamo
+        <a href="#portada" className="font-display text-[1.75rem] font-semibold leading-none tracking-[-0.02em]">
+          Mirra
         </a>
         <div className="flex items-center gap-2">
           <CopyButton
@@ -126,10 +126,10 @@ export function SiteNav() {
 
       <aside className="no-print fixed inset-y-0 left-0 z-40 hidden w-60 flex-col border-r border-tinta/10 bg-papel/95 px-3 py-6 backdrop-blur-md xl:flex">
         <a href="#portada" className="flex items-center gap-2 px-2">
-          <ReedMark className="size-8" title="Cálamo, casa de perfume" />
+          <ReedMark className="size-8" title="Mirra, casa de perfume" />
           <span>
-            <span className="block font-display text-[1.7rem] leading-none tracking-[-0.03em]">
-              Cálamo
+            <span className="block font-display text-[1.85rem] font-semibold leading-none tracking-[-0.02em]">
+              Mirra
             </span>
             <span className="mt-1 block font-sans text-[10px] uppercase tracking-[0.22em] text-humo">
               Casa de perfume

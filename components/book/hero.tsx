@@ -24,15 +24,15 @@ export function Hero() {
       <div className="mx-auto flex min-h-[calc(100svh-5rem)] max-w-6xl flex-col xl:min-h-[calc(100svh-3rem)]">
         <div className="flex items-center justify-between gap-4 font-mono text-[10px] uppercase tracking-[0.22em] text-humo">
           <span>00 / Portada</span>
-          <span className="hidden sm:inline">Manual de identidad · versión 1</span>
+          <span className="hidden sm:inline">Manual de identidad · versión 2</span>
           <span>Antes de la tienda</span>
         </div>
 
         <div className="mt-12 grid flex-1 content-end gap-12 lg:grid-cols-12 lg:items-end lg:gap-8">
           <div className="lg:col-span-7">
             <ReedMark className="size-16 md:size-20" />
-            <h1 className="mt-6 font-display text-[clamp(4.6rem,15vw,9.4rem)] leading-[0.78] tracking-[-0.05em] text-balance text-tinta">
-              Cálamo
+            <h1 className="mt-6 font-display text-[clamp(4.8rem,16vw,10rem)] font-semibold leading-[0.78] tracking-[-0.03em] text-balance text-tinta">
+              Mirra
             </h1>
             <p className="mt-5 font-sans text-[12px] uppercase tracking-[0.28em] text-humo">
               Casa de perfume
@@ -41,24 +41,24 @@ export function Hero() {
 
           <div className="border-t border-tinta/15 pt-6 lg:col-span-5 lg:border-t-0 lg:border-l lg:pt-2 lg:pl-8">
             <p lang="ar" dir="rtl" className="font-arabic text-7xl leading-none text-tinta md:text-8xl">
-              قلم
+              مُرّ
             </p>
             <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.18em] text-humo">
-              qalam · ká-lam
+              murr · la misma resina
             </p>
             <p className="mt-3 max-w-xs text-lg leading-snug text-pretty text-tinta">
-              La misma caña, en la otra escritura.
+              No brilla. Se queda.
             </p>
           </div>
         </div>
 
         <div className="mt-14 grid gap-8 border-t border-tinta/15 pt-8 md:grid-cols-12">
-          <p className="font-display text-[2rem] leading-[1.05] tracking-[-0.03em] text-balance text-tinta md:col-span-7 md:text-5xl">
-            Dos escrituras.
-            <span className="mt-1 block italic text-cardenillo-ink">Un mismo cálamo.</span>
+          <p className="font-display text-[2rem] font-medium leading-[1.05] tracking-[-0.02em] text-balance text-tinta md:col-span-7 md:text-5xl">
+            Lujo en voz baja.
+            <span className="mt-1 block italic text-cardenillo-ink">Dos salas, la misma luz.</span>
           </p>
           <p className="max-w-sm self-end text-lg leading-relaxed text-pretty text-humo md:col-span-5">
-            Perfumes de diseñador y casas árabes, leídos con la misma seriedad. Ninguno es el tipo del otro.
+            Perfumes de diseñador y casas árabes. El frasco se llama como se llama. Ninguno es el tipo del otro.
           </p>
         </div>
 

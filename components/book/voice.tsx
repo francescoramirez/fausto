@@ -2,16 +2,16 @@ import { CopyButton } from "@/components/copy-button"
 import { Kicker, Shell } from "@/components/book/kicker"
 import { say } from "@/content/brand"
 
-const whatsapp = `Hola. Soy de Cálamo, casa de perfume.
+const whatsapp = `Hola. Soy de Mirra, casa de perfume.
 
-Si me cuentas qué usas ahora y a qué hora del día lo usas, te propongo dos lecturas: una de Firma y una de Qalam. No tienen que parecerse. Tienen que servirte.
+Si me cuentas qué usas ahora y a qué hora del día lo usas, te propongo dos lecturas: una de Firma y una de Attar. No tienen que parecerse. Tienen que servirte.
 
 El frasco se llama como se llama. Si es tester o tira, te lo digo antes del precio.`
 
 const answers = [
   {
     q: "¿Es original?",
-    a: "Sí. En Firma está el perfume de esa casa. En Qalam está el perfume de esa casa árabe, con su nombre, no como imitación de otra. Si algo no está, no invento un parecido para cerrar la venta.",
+    a: "Sí. En Firma está el perfume de esa casa. En Attar está el perfume de esa casa árabe, con su nombre, no como imitación de otra. Si algo no está, no invento un parecido para cerrar la venta.",
   },
   {
     q: "¿A qué se parece?",
@@ -19,7 +19,7 @@ const answers = [
   },
   {
     q: "¿Tienes árabes baratos?",
-    a: "Tengo la Sala Qalam. Hay precios distintos, como en Firma. No es el cajón de ofertas: es la otra escritura.",
+    a: "Tengo la Sala Attar. Hay precios distintos, como en Firma. No es el cajón de ofertas: es la otra escritura.",
   },
 ]
 

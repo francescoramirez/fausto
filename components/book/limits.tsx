@@ -20,13 +20,13 @@ export function Limits() {
       </ul>
 
       <footer className="mt-16 bg-tinta px-6 py-10 text-hueso md:px-10">
-        <p className="font-display text-4xl tracking-[-0.04em]">Cálamo</p>
+        <p className="font-display text-4xl font-semibold tracking-[-0.03em]">Mirra</p>
         <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.22em] text-cana">
-          Casa de perfume · manual de identidad · versión 1
+          Casa de perfume · manual de identidad · versión 2
         </p>
         <div className="mt-8 max-w-2xl space-y-4 text-sm leading-relaxed text-cana">
           <p>
-            Preparado para construir la casa antes de la tienda. El nombre es una propuesta. Si el emprendimiento ya tiene un nombre que la gente reconoce, no se tira por terquedad: este sistema se puede vestir con ese nombre, siempre que aguante esta voz. Si el nombre actual es genérico —luxe, gold, importados, árabes— Cálamo es el reemplazo.
+            Preparado para construir la casa antes de la tienda. El nombre es una propuesta: se oye una vez y se queda. Si el emprendimiento ya tiene un nombre que la gente reconoce, no se tira por terquedad: este sistema se puede vestir con ese nombre, siempre que aguante esta voz. Si el nombre actual es genérico —luxe, gold, importados, árabes— Mirra es el reemplazo.
           </p>
           <p>
             Antes de imprimir cajas o comprar el dominio, conviene buscar la marca en la clase 3, perfumería, del país donde se va a vender. Este manual no certifica que el nombre esté libre.

@@ -1,11 +1,11 @@
-# Cálamo — manual de identidad
+# Mirra — manual de identidad
 
-Identidad de marca para una casa de perfume que vende **firmas de diseñador** y **casas árabes** con la misma seriedad. El manual cierra el nombre, la voz, la paleta, la tipografía y el encargo del símbolo. La tienda de Shopify viene después. El isotipo todavía no está dibujado: hay una hipótesis de construcción y un brief para pasarlo a diseño.
+Identidad de marca para una casa de perfume que vende **firmas de diseñador** y **casas árabes** con la misma seriedad. El lujo es en voz baja: marfil, ónix, granate y un hilo de bronce mate. La tienda de Shopify viene después. El isotipo todavía no está dibujado: hay una hipótesis de construcción y un brief para pasarlo a diseño.
 
 ## Qué hay adentro
 
-- Propuesta de nombre: **Cálamo** (la caña con la que se escribía; en árabe, *qalam*).
-- Dos salas: **Firma** y **Qalam**. Un formato: **Tiras**. Una voz pública: **Cuaderno**.
+- Propuesta de nombre: **Mirra** (la resina; en árabe, *murr*).
+- Dos salas: **Firma** y **Attar**. Un formato: **Tiras**. Una voz pública: **Cuaderno**.
 - Paleta, tipografía, fotografía, empaque, Instagram, WhatsApp y la forma de la futura tienda.
 - Brief descargable en `/api/brief` y botón para copiarlo.
 

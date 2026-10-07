@@ -19,9 +19,9 @@ const rooms = [
     line: "Naranja amarga sobre piedra. Para el día.",
   },
   {
-    id: "qalam",
-    label: "Qalam",
-    kicker: "Sala Qalam",
+    id: "attar",
+    label: "Attar",
+    kicker: "Sala Attar",
     title: "La otra escritura.",
     text: "Casas árabes, con la misma luz.",
     product: "Khamrah",
@@ -51,7 +51,7 @@ export function StoreDraft() {
       <div className="border border-tinta/20 bg-tinta p-2 shadow-[0_24px_60px_rgba(26,22,19,0.18)]">
         <div className="bg-papel px-4 pt-4 pb-5 text-tinta">
           <div className="flex items-baseline justify-between">
-            <p className="font-display text-3xl leading-none tracking-[-0.04em]">Cálamo</p>
+            <p className="font-display text-3xl font-semibold leading-none tracking-[-0.03em]">Mirra</p>
             <p className="font-sans text-[9px] uppercase tracking-[0.18em] text-humo">Casa de perfume</p>
           </div>
           <div className="mt-4 flex gap-2" role="tablist" aria-label="Salas de la tienda">

@@ -1,14 +1,15 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { DM_Mono, Fraunces, Literata, Noto_Naskh_Arabic, Outfit } from "next/font/google";
+import { Cormorant_Garamond, DM_Mono, Literata, Noto_Naskh_Arabic, Outfit } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
-const fraunces = Fraunces({
+const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  display: "swap",
+  weight: ["500", "600", "700"],
   style: ["normal", "italic"],
-  variable: "--font-fraunces",
+  display: "swap",
+  variable: "--font-cormorant",
 });
 
 const literata = Literata({
@@ -38,27 +39,27 @@ const naskh = Noto_Naskh_Arabic({
 });
 
 export const metadata: Metadata = {
-  title: "Cálamo — manual de identidad",
+  title: "Mirra — manual de identidad",
   description:
-    "Identidad de una casa de perfume que vende firmas de diseñador y casas árabes. Nombre, voz, paleta y brief para dibujar el símbolo.",
+    "Identidad de una casa de perfume que vende firmas de diseñador y casas árabes. Nombre, voz, paleta de lujo en voz baja y brief para dibujar el símbolo.",
   openGraph: {
-    title: "Cálamo — manual de identidad",
+    title: "Mirra — manual de identidad",
     description:
-      "Dos escrituras. Un mismo cálamo. Manual de marca para una casa de perfume de diseñador y árabe.",
+      "Lujo en voz baja. Manual de marca para una casa de perfume de diseñador y árabe.",
     locale: "es_419",
     type: "website",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#E6D9C8",
+  themeColor: "#F3EEE6",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="es"
-      className={`${fraunces.variable} ${literata.variable} ${outfit.variable} ${dmMono.variable} ${naskh.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${literata.variable} ${outfit.variable} ${dmMono.variable} ${naskh.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         {children}

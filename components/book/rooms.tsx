@@ -24,7 +24,7 @@ export function Rooms() {
         La arquitectura de la marca.
       </h2>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-humo">
-        Cuatro nombres y ninguno más, hasta que la casa los necesite de verdad. Firma y Qalam son salas. Tiras es un formato. Cuaderno es la voz que enseña.
+        Cuatro nombres y ninguno más, hasta que la casa los necesite de verdad. Firma y Attar son salas. Tiras es un formato. Cuaderno es la voz que enseña.
       </p>
 
       <div className="mt-12 space-y-4">

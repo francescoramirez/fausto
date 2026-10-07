@@ -22,7 +22,7 @@ const readings = [
   },
   {
     id: "khamrah",
-    sala: "Qalam",
+    sala: "Attar",
     salaClass: "text-resina",
     house: "Lattafa",
     name: "Khamrah",

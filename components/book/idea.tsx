@@ -29,9 +29,9 @@ export function Idea() {
           </div>
         </article>
         <article className="flex min-h-[22rem] flex-col justify-between bg-resina px-6 py-8 text-hueso md:px-10 md:py-12">
-          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cana">Sala Qalam</p>
+          <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-cana">Sala Attar</p>
           <div>
-            <h3 className="font-display text-5xl tracking-[-0.04em] md:text-7xl">Qalam</h3>
+            <h3 className="font-display text-5xl tracking-[-0.03em] md:text-7xl">Attar</h3>
             <p className="mt-5 max-w-sm text-lg leading-relaxed text-hueso/85">
               Las casas árabes. Misma mesa, misma luz. No son la versión económica de la sala de al lado.
             </p>

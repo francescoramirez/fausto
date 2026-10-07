@@ -2,11 +2,11 @@ import { Kicker, Shell } from "@/components/book/kicker"
 
 const faces = [
   {
-    name: "Fraunces",
+    name: "Cormorant Garamond",
     job: "Display y wordmark",
-    sample: "Dos escrituras.",
-    className: "font-display text-5xl leading-[1.02] tracking-[-0.04em] md:text-7xl",
-    note: "Terminales blandas, como la tinta que se abre en el papel. Romana en el logo. La itálica se reserva para una frase, no para todo el titular.",
+    sample: "Lujo en voz baja.",
+    className: "font-display text-5xl font-medium leading-[1.02] tracking-[-0.03em] md:text-7xl",
+    note: "Contraste alto, pero en romana y con aire. El logo va en peso 600. La itálica es una frase, no el sistema. No es una script ni un Didot de vitrina.",
   },
   {
     name: "Literata",
@@ -18,7 +18,7 @@ const faces = [
   {
     name: "Outfit",
     job: "Interfaz, precio, navegación",
-    sample: "Firma    Qalam    Tiras    Cuaderno",
+    sample: "Firma    Attar    Tiras    Cuaderno",
     className: "font-sans text-lg tracking-wide md:text-xl",
     note: "La voz de la tienda cuando hay que elegir, pagar o filtrar. Geométrica, sin gritar.",
   },
@@ -48,7 +48,7 @@ export function TypeSpecimen() {
         Una voz para leer, otra para vender.
       </h2>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-humo">
-        Cinco fuentes, cada una con un trabajo. No se cambia Fraunces por un Didot «más perfume», ni Playfair, ni una script de firma. Eso ya es otra tienda.
+        Cinco fuentes, cada una con un trabajo. Cormorant no se cambia por una script, ni por Playfair, ni por un Didot más flaco. La elegancia está en el aire alrededor de la letra.
       </p>
 
       <div className="mt-12 space-y-4">
@@ -79,11 +79,11 @@ export function TypeSpecimen() {
         </p>
         <p className="border border-tinta/10 p-5 text-sm leading-relaxed">
           <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-cardenillo-ink">Caja</span>
-          <span className="mt-3 block">El wordmark va en «Cálamo», no en mayúsculas. La caja alta se reserva para la categoría y para los rótulos mono.</span>
+          <span className="mt-3 block">El wordmark va en «Mirra», no en mayúsculas. La caja alta se reserva para la categoría y para los rótulos mono.</span>
         </p>
         <p className="border border-tinta/10 p-5 text-sm leading-relaxed">
           <span className="font-mono text-[11px] uppercase tracking-[0.16em] text-cardenillo-ink">Acento</span>
-          <span className="mt-3 block">La Á no se cae. En piezas públicas es parte del nombre. En el usuario de red, donde no cabe, se acepta @calamo y se explica en la bio.</span>
+          <span className="mt-3 block">Mirra no lleva acento. La erre se pronuncia fuerte. En la red, @mirra. La categoría «casa de perfume» evita que se lea como otra cosa.</span>
         </p>
       </div>
     </Shell>

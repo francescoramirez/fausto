@@ -49,11 +49,11 @@ export function Palette() {
     <section id="color" className="scroll-mt-20 border-t border-tinta/10 xl:scroll-mt-8">
       <div className="mx-auto max-w-6xl px-5 py-20 md:px-10 md:py-28">
         <Kicker n="08">Color</Kicker>
-        <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.02] tracking-[-0.035em] text-balance md:text-6xl">
-          Tinta, papel, un corte.
+        <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.02] tracking-[-0.03em] text-balance md:text-6xl">
+          Marfil, ónix, una joya.
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-humo">
-          Se recuerdan cuatro colores. Los demás existen para que se pueda leer o para etiquetar una sala. El azafrán no se administra: aparece una vez, como el corte de la caña.
+          Se recuerdan cuatro colores. El lujo está en lo poco: mucho marfil, ónix para escribir, granate en un lugar, bronce en un hilo. Si una pieza se puede describir como dorada, está mal.
         </p>
         <div className="mt-8 flex flex-wrap gap-3">
           <CopyButton
@@ -85,7 +85,7 @@ export function Palette() {
       <div className="mx-auto max-w-6xl px-5 py-16 md:px-10">
         <h3 className="font-display text-3xl tracking-[-0.03em]">Proporción, no fórmula.</h3>
         <p className="mt-3 max-w-2xl text-humo">
-          En una pieza tranquila el papel manda, la tinta escribe y el cardenillo firma. Resina y hiel solo rotulan. El azafrán es una línea.
+          En una pieza tranquila el marfil manda, el ónix escribe y el granate firma. Cuero y noche solo rotulan una sala. El bronce es una línea mate.
         </p>
         <div className="mt-6 flex h-8 overflow-hidden" aria-hidden>
           <span className="bg-papel" style={{ width: "58%", boxShadow: "inset 0 0 0 1px rgba(26,22,19,0.15)" }} />
@@ -97,12 +97,12 @@ export function Palette() {
           <span className="bg-azafran" style={{ width: "0.6%" }} />
         </div>
         <ul className="mt-8 grid gap-3 text-sm leading-relaxed sm:grid-cols-2">
-          <li>Tinta sobre papel, hueso o caña: el texto corrido.</li>
-          <li>Humo sobre papel o hueso: el texto secundario.</li>
-          <li>Hueso sobre tinta, cardenillo, resina o azul de hiel.</li>
-          <li>Cardenillo profundo para un enlace chico. El cardenillo vivo, para botón y titular.</li>
-          <li>Azafrán nunca como texto pequeño. Si alguna vez es fondo, la letra es tinta y grande.</li>
-          <li>Miel (#8A5A32) solo en la mancha de una foto de blotter. No entra a botones ni a fondos.</li>
+          <li>Ónix sobre marfil, crema o piedra: el texto corrido.</li>
+          <li>Sombra sobre marfil o crema: el texto secundario.</li>
+          <li>Crema sobre ónix, granate, cuero o noche.</li>
+          <li>Granate profundo para un enlace chico. El granate vivo, para botón y titular.</li>
+          <li>Bronce nunca como texto pequeño ni como fondo. Es un filete. Si brilla, se pasó.</li>
+          <li>El marrón de resina (#6E4A38) solo puede manchar una foto. No entra a botones ni a fondos.</li>
         </ul>
       </div>
     </section>

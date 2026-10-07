@@ -5,7 +5,7 @@ import { Separator } from "@/components/ui/separator"
 const rules = [
   {
     title: "Navegación",
-    text: "Firma, Qalam, Tiras, Cuaderno. La búsqueda existe, el género no es una puerta. El hero no dice «árabes desde…». Eso convierte a Qalam en el cajón de ofertas.",
+    text: "Firma, Attar, Tiras, Cuaderno. La búsqueda existe, el género no es una puerta. El hero no dice «árabes desde…». Eso convierte a Attar en el cajón de ofertas.",
   },
   {
     title: "Ficha",
@@ -17,7 +17,7 @@ const rules = [
   },
   {
     title: "Fuentes en Shopify",
-    text: "Si el tema no trae Fraunces, Literata, Outfit y DM Mono, se cargan. No se cambia Fraunces por Playfair para salir del paso. Los colores del tema usan los tokens, con los mismos nombres.",
+    text: "Si el tema no trae Cormorant Garamond, Literata, Outfit y DM Mono, se cargan. No se cambia Cormorant por una script para salir del paso. Los colores del tema usan los tokens, con los mismos nombres.",
   },
 ]
 
@@ -47,7 +47,7 @@ export function Shop() {
           </ul>
           <Separator className="my-8 bg-tinta/15" />
           <p className="text-sm leading-relaxed text-humo">
-            Colecciones: Firma, Qalam, Tiras. Páginas: La casa, Cuaderno, Contacto. En el correo de envío: «Tu pedido ya salió de Cálamo. Adentro va la lectura de cada frasco. Pruébalo en piel, no solo en la tapa.»
+            Colecciones: Firma, Attar, Tiras. Páginas: La casa, Cuaderno, Contacto. En el correo de envío: «Tu pedido ya salió de Mirra. Adentro va la lectura de cada frasco. Pruébalo en piel, no solo en la tapa.»
           </p>
         </div>
       </div>

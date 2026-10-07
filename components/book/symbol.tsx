@@ -2,17 +2,17 @@ import { ReedMark } from "@/components/reed-mark"
 import { Kicker } from "@/components/book/kicker"
 
 const versions = [
-  { title: "Color firma", ink: "color" as const, ground: "bg-papel", note: "Cardenillo y un corte de azafrán. Es la versión que se recuerda." },
-  { title: "Una tinta", ink: "mono" as const, ground: "bg-hueso text-tinta", note: "El corte es el vacío. No se reemplaza el azafrán por un gris." },
-  { title: "Reversa", ink: "mono" as const, ground: "bg-tinta text-hueso", note: "Sobre tinta, para sello, avatar oscuro y la página del relato." },
+  { title: "Color firma", ink: "color" as const, ground: "bg-papel", note: "Granate en cabujón y un engarce de bronce mate. Es la versión que se recuerda." },
+  { title: "Una tinta", ink: "mono" as const, ground: "bg-hueso text-tinta", note: "Piedra y engarce en el mismo color. El bronce no se simula con un gris." },
+  { title: "Reversa", ink: "mono" as const, ground: "bg-tinta text-hueso", note: "Sobre ónix, para sello, avatar oscuro y la página del relato." },
 ]
 
 const refuses = [
-  "Sin acento: «Calamo»",
-  "En script o en Didot",
-  "Con corona, gota o frasco",
+  "En mayúsculas: «MIRRA»",
+  "En script o en letra de firma",
+  "Con corona, gota o diamante",
   "Estirado para llenar un cuadro",
-  "Sobre oro o mármol",
+  "Sobre foil o mármol veteado",
   "Con caligrafía de adorno",
 ]
 
@@ -23,11 +23,11 @@ export function Symbol() {
         <Kicker n="10" tone="ink">
           Símbolo
         </Kicker>
-        <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.02] tracking-[-0.035em] text-balance md:text-6xl">
+        <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.02] tracking-[-0.03em] text-balance md:text-6xl">
           Hipótesis de isotipo, lista para dibujar.
         </h2>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-cana">
-          Esto no es el logo. Es el encargo hecho visible: una caña hueca y un solo corte. Quien dibuje puede alejarse de esta geometría. No puede alejarse de la idea.
+          Esto no es el logo. Es el encargo hecho visible: una piedra de granate y un engarce mate. Quien dibuje puede alejarse de esta geometría. No puede alejarse de la idea.
         </p>
 
         <div className="mt-14 grid items-center gap-10 lg:grid-cols-12">
@@ -37,10 +37,10 @@ export function Symbol() {
           <div className="lg:col-span-5">
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-cana">Construcción</p>
             <ul className="mt-4 space-y-4 text-base leading-relaxed">
-              <li>Círculo hueco. El tubo de la caña, no un anillo de joyería.</li>
-              <li>Abertura hacia abajo a la derecha, de unos cincuenta grados. Es la boca del cálamo.</li>
-              <li>El corte, en azafrán, sigue la diagonal de esa boca. Es lo único en ese color.</li>
-              <li>Aire libre: la mitad del radio, por los cuatro lados.</li>
+              <li>Una elipse llena. Es un cabujón: piedra pulida, sin facetas que hagan brillantina.</li>
+              <li>Debajo, un solo arco de bronce mate. Es la montura, no un adorno.</li>
+              <li>El bronce no se repite en otra parte del símbolo.</li>
+              <li>Aire libre: la mitad del alto de la piedra, por los cuatro lados.</li>
               <li>Mínimo: 16 px en pantalla, 8 mm en impresión. Si a ese tamaño no se entiende, está de más.</li>
             </ul>
           </div>
@@ -62,10 +62,10 @@ export function Symbol() {
 
         <div className="mt-14 grid gap-8 border-t border-hueso/15 pt-10 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <p className="font-display text-6xl leading-[0.85] tracking-[-0.045em] text-hueso">Cálamo</p>
+            <p className="font-display text-6xl font-semibold leading-[0.85] tracking-[-0.03em] text-hueso">Mirra</p>
             <p className="mt-3 font-sans text-[11px] uppercase tracking-[0.28em] text-cana">Casa de perfume</p>
             <p className="mt-6 max-w-sm text-sm leading-relaxed text-cana">
-              Lockup de trabajo, armado con la fuente. El dibujo final puede ajustar el espacio entre símbolo y nombre. El acento se queda. El cardenillo no se sube a la letra.
+              Lockup de trabajo, armado con la fuente. El dibujo final puede ajustar el espacio entre símbolo y nombre. El granate no se sube a la letra. El wordmark no va en mayúsculas.
             </p>
           </div>
           <div className="lg:col-span-7">

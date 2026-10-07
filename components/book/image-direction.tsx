@@ -2,7 +2,7 @@ import { Kicker, Shell } from "@/components/book/kicker"
 
 const shots = [
   { ratio: "4:5", name: "El frasco", text: "Una botella, luz de lado, fondo de papel. Sin halo, sin láser, sin humo." },
-  { ratio: "1:1", name: "La mesa", text: "Tira de blotter, caña o hilo de azafrán, un plato de cobre oxidado. Los dos tipos de frasco, misma mesa." },
+  { ratio: "1:1", name: "La mesa", text: "Yeso cálido o lino marfil, un hilo de bronce mate, la piedra granate. Los dos tipos de frasco, misma mesa." },
   { ratio: "9:16", name: "La lectura", text: "Historia: el nombre, tres notas, una frase. Poco movimiento. Nada de texto en script." },
 ]
 
@@ -40,7 +40,7 @@ export function ImageDirection() {
             <li>Luz lateral, sombra suave, papel o madera clara.</li>
             <li>Manos sin logo de joyería. Distintas pieles. Uñas que no compiten.</li>
             <li>La tira de blotter como objeto, no solo el frasco-relicario.</li>
-            <li>Materiales con nombre: resina, azafrán, cobre, caña. Si hay una rosa, es una rosa que se está mostrando, no un relleno.</li>
+            <li>Materiales con nombre: mirra, granate, lino, bronce mate. Si hay una rosa, es una rosa que se está mostrando, no un relleno.</li>
             <li>El mismo recorte para las dos salas. Si uno es rectángulo, el otro también.</li>
           </ul>
         </article>

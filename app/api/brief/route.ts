@@ -4,7 +4,7 @@ export function GET() {
   return new Response(briefMarkdown, {
     headers: {
       "Content-Type": "text/markdown; charset=utf-8",
-      "Content-Disposition": 'attachment; filename="calamo-brief.md"',
+      "Content-Disposition": 'attachment; filename="mirra-brief.md"',
     },
   });
 }

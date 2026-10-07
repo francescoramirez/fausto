@@ -34,15 +34,15 @@ export function Pieces() {
       <div className="mt-12 grid items-start gap-6 lg:grid-cols-2">
         <article className="border border-tinta/15 bg-papel p-8 md:p-12">
           <ReedMark className="size-12" title="Sello de caja, estudio" />
-          <p className="mt-8 font-display text-5xl tracking-[-0.04em]">Cálamo</p>
+          <p className="mt-8 font-display text-5xl font-semibold tracking-[-0.03em]">Mirra</p>
           <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.24em] text-humo">Casa de perfume</p>
-          <p className="mt-10 font-mono text-[11px] uppercase tracking-[0.18em] text-resina">Sala Qalam</p>
+          <p className="mt-10 font-mono text-[11px] uppercase tracking-[0.18em] text-resina">Sala Attar</p>
           <p className="mt-3 font-display text-4xl tracking-[-0.03em]">Khamrah</p>
           <p className="mt-1 font-sans text-sm text-humo">Lattafa</p>
           <div className="mt-10 h-[3px] w-16 bg-azafran" aria-hidden />
           <p className="mt-4 font-mono text-[11px] uppercase tracking-[0.16em]">Eau de parfum · 100 ml</p>
           <p className="mt-8 max-w-xs text-sm leading-relaxed text-humo">
-            Cartón sin estucar, color papel de tira. Impresión en tinta. El cierre es un hilo de azafrán, no una calcomanía dorada.
+            Caja mate color marfil. Impresión en ónix. Sello granate. El cierre es un hilo de bronce mate, no foil ni una calcomanía dorada.
           </p>
         </article>
 
@@ -70,7 +70,7 @@ export function Pieces() {
       <div className="mt-16">
         <h3 className="font-display text-3xl tracking-[-0.03em]">Tres posts. Nada más, hasta que hagan falta.</h3>
         <p className="mt-3 max-w-2xl text-humo">
-          El papel manda en la grilla. No van dos fondos oscuros seguidos. El azafrán aparece, como mucho, una vez cada nueve piezas.
+          El marfil manda en la grilla. No van dos fondos oscuros seguidos. El bronce aparece, como mucho, una vez cada nueve piezas.
         </p>
         <div className="mt-6 grid gap-4 md:grid-cols-3">
           {posts.map((post) => (

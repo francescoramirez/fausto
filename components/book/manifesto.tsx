@@ -25,7 +25,7 @@ export function Manifesto() {
           <p>
             Los segundos vienen de otra escritura. Oud, ámbar, rosa, almizcle, dátil. A veces son aceite y a veces eau de parfum. En muchas tiendas de aquí esa escritura se mostró como el cajón barato.
           </p>
-          <p>Cálamo no traduce una sala a la otra. Las sienta a la misma mesa y lee cada frasco por su nombre.</p>
+          <p>Mirra no traduce una sala a la otra. Las sienta a la misma mesa y lee cada frasco por su nombre.</p>
           <p>
             Si un perfume es de Hermès, se dice Hermès.
             <br />
@@ -42,7 +42,7 @@ export function Manifesto() {
             <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-cardenillo-ink">
               Tarjeta de bolsillo
             </p>
-            <p className="mt-6 font-display text-5xl leading-none tracking-[-0.04em]">Cálamo</p>
+            <p className="mt-6 font-display text-5xl font-semibold leading-none tracking-[-0.03em]">Mirra</p>
             <p className="mt-2 font-sans text-[11px] uppercase tracking-[0.22em] text-humo">
               Casa de perfume
             </p>
@@ -55,14 +55,14 @@ export function Manifesto() {
               Bio, mientras no hay tienda
             </p>
             <p className="mt-6 font-reading text-lg leading-relaxed text-hueso">
-              Cálamo — casa de perfume.
+              Mirra — casa de perfume.
               <br />
-              Dos escrituras: firmas de diseñador y casas árabes.
+              Lujo en voz baja. Firmas de diseñador y casas árabes.
               <br />
               Tiras de prueba. El frasco se llama como se llama.
             </p>
             <p className="mt-6 text-sm text-cana">
-              Historias fijas: Firma, Qalam, Tiras, Lecturas, Envíos. Envíos nombra la ciudad cuando exista, no antes.
+              Historias fijas: Firma, Attar, Tiras, Lecturas, Envíos. Envíos nombra la ciudad cuando exista, no antes.
             </p>
           </article>
         </div>

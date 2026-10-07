@@ -1,15 +1,15 @@
 export const colors = {
-  papel: "#E6D9C8",
-  hueso: "#F3EEE6",
-  tinta: "#1A1613",
-  humo: "#524A43",
-  cana: "#CDBFA6",
-  cardenillo: "#0E6B5E",
-  cardenilloInk: "#085248",
-  azafran: "#C6531F",
-  resina: "#7A3140",
-  hiel: "#2C384C",
-  miel: "#8A5A32",
+  papel: "#F3EEE6",
+  hueso: "#FBF8F4",
+  tinta: "#12100E",
+  humo: "#5E564E",
+  cana: "#D4CBBF",
+  cardenillo: "#6B2434",
+  cardenilloInk: "#5C1E2C",
+  azafran: "#8F785C",
+  resina: "#5C4038",
+  hiel: "#1C2433",
+  miel: "#6E4A38",
 } as const
 
 export const chapters = [
@@ -35,76 +35,76 @@ export type ChapterId = (typeof chapters)[number]["id"]
 
 export const coreColors = [
   {
-    name: "Papel de tira",
+    name: "Marfil",
     hex: colors.papel,
     ink: "dark" as const,
-    role: "El fondo de la casa. Es el color de una tira de blotter, no un blanco de clínica.",
-    use: "Fondos, cajas, gran parte de Instagram.",
+    role: "El fondo. Marfil cálido, limpio, de salón. La mayor parte de la casa vive aquí.",
+    use: "Fondos, cajas, la grilla de Instagram.",
   },
   {
-    name: "Tinta de agallas",
+    name: "Ónix",
     hex: colors.tinta,
     ink: "light" as const,
-    role: "La tinta con la que se escribía. Casi negra, con un fondo cálido.",
+    role: "Negro cálido, de noche. El texto y el wordmark. No es un negro de plástico.",
     use: "Texto, wordmark, la página del relato.",
   },
   {
-    name: "Cardenillo",
+    name: "Granate",
     hex: colors.cardenillo,
     ink: "light" as const,
-    role: "El color que se recuerda. Cobre oxidado, el de un alambique viejo.",
-    use: "Isotipo, botones, un acento por pieza. Texto chico: usa el cardenillo profundo.",
+    role: "La joya. Un rojo de piedra, apagado, como la mirra a contraluz. Es el color que se recuerda.",
+    use: "Isotipo, botones, un acento por pieza. Texto chico: granate profundo.",
   },
   {
-    name: "Azafrán",
+    name: "Bronce mate",
     hex: colors.azafran,
     ink: "dark" as const,
-    role: "El corte del cálamo. Un hilo, un sello, una línea. Aparece una vez.",
-    use: "Nunca como texto pequeño. Nunca como fondo con letras claras encima.",
+    role: "El único metal. Un hilo, un engarce, un filete. Mate: si brilla, se pasó.",
+    use: "Nunca un fondo. Nunca foil. Nunca texto pequeño.",
   },
 ]
 
 export const supportColors = [
   {
-    name: "Hueso",
+    name: "Crema",
     hex: colors.hueso,
     ink: "dark" as const,
-    role: "Superficie elevada: ficha, carta, reverso del sello.",
-    use: "Tarjetas y cajas interiores.",
+    role: "Superficie elevada: ficha, carta, interior de la caja.",
+    use: "Tarjetas y el reverso del sello.",
   },
   {
-    name: "Caña",
+    name: "Piedra",
     hex: colors.cana,
     ink: "dark" as const,
-    role: "La caña sin cortar. Filetes, fondos quietos, separadores.",
+    role: "Yeso cálido. Filetes y fondos quietos.",
     use: "Líneas y bloques secundarios.",
   },
   {
-    name: "Humo",
+    name: "Sombra",
     hex: colors.humo,
     ink: "light" as const,
-    role: "Texto secundario. No es un gris de interfaz: es tinta diluida.",
-    use: "Párrafos de apoyo sobre papel o hueso.",
+    role: "Texto secundario. Ónix diluido, nunca un gris frío de interfaz.",
+    use: "Párrafos de apoyo sobre marfil o crema.",
   },
   {
-    name: "Cardenillo profundo",
+    name: "Granate profundo",
     hex: colors.cardenilloInk,
     ink: "light" as const,
-    role: "El mismo cobre, más oscuro, para que un enlace se pueda leer.",
-    use: "Links y labels chicos sobre papel.",
+    role: "El mismo granate, más oscuro, para que un enlace se lea.",
+    use: "Links y rótulos chicos sobre marfil.",
   },
   {
-    name: "Resina",
+    name: "Cuero",
     hex: colors.resina,
     ink: "light" as const,
-    role: "Etiqueta de la Sala Qalam. Rosa seca, cuero, dragón.",
+    role: "Etiqueta de la Sala Attar. Marrón de estuche, no un dorado.",
     use: "Solo el rótulo de esa sala. No pinta la tienda.",
   },
   {
-    name: "Azul de hiel",
+    name: "Noche",
     hex: colors.hiel,
     ink: "light" as const,
-    role: "Etiqueta de la Sala Firma. La tinta europea, azulada.",
+    role: "Etiqueta de la Sala Firma. Azul de smoking, casi negro.",
     use: "Solo el rótulo de esa sala. No pinta la tienda.",
   },
 ]
@@ -114,7 +114,7 @@ export const rooms = [
     id: "firma",
     n: "Sala 01",
     name: "Firma",
-    accent: "Azul de hiel",
+    accent: "Noche",
     hex: colors.hiel,
     pronoun: "La sala de las firmas",
     promise: "Perfumes de casas de diseñador, dichos por su nombre.",
@@ -123,12 +123,12 @@ export const rooms = [
       "Terre d’Hermès es naranja amarga sobre piedra. Para el día en que quieres oler a aire seco.",
   },
   {
-    id: "qalam",
+    id: "attar",
     n: "Sala 02",
-    name: "Qalam",
-    accent: "Resina",
+    name: "Attar",
+    accent: "Cuero",
     hex: colors.resina,
-    pronoun: "La sala qalam, se pronuncia ká-lam",
+    pronoun: "La sala attar, se pronuncia Á-tar",
     promise: "Perfumes de casas árabes, con la misma luz que las firmas.",
     not: "No es el cajón barato, ni el rincón exótico, ni la imitación de la sala de al lado.",
     sentence:
@@ -138,7 +138,7 @@ export const rooms = [
     id: "tiras",
     n: "Formato",
     name: "Tiras",
-    accent: "Cardenillo",
+    accent: "Granate",
     hex: colors.cardenillo,
     pronoun: "Pide una tira",
     promise: "Decants y sets cortos para decidir con la piel, no con el anuncio.",
@@ -150,7 +150,7 @@ export const rooms = [
     id: "cuaderno",
     n: "Voz pública",
     name: "Cuaderno",
-    accent: "Tinta",
+    accent: "Ónix",
     hex: colors.tinta,
     pronoun: "El cuaderno de la casa",
     promise: "Textos cortos que enseñan a leer un perfume sin hablar hacia abajo.",
@@ -173,7 +173,7 @@ export const families = [
 
 export const say = [
   ["Casa de perfume", "Tienda de fragancias premium"],
-  ["Firma y Qalam", "Diseñador y árabes baratos"],
+  ["Firma y Attar", "Diseñador y árabes baratos"],
   ["Eau de parfum, attar, 10 ml", "Esencia intensa de larga duración"],
   ["Se queda en la ropa", "Despierta tus sentidos"],
   ["Lattafa, Hermès, Rasasi", "Tipo Baccarat, inspirado en, el dupe de"],
@@ -192,7 +192,7 @@ export const traits = [
   },
   {
     word: "Pareja",
-    line: "Las dos salas pesan lo mismo. Qalam no es la oferta. Firma no es la única de verdad.",
+    line: "Las dos salas pesan lo mismo. Attar no es la oferta. Firma no es la única de verdad.",
   },
   {
     word: "Derecha",
@@ -205,27 +205,27 @@ export const refusals = [
   "Organizar la tienda en hombre y mujer. Si una casa lo comercializó así, es un dato al pie, no una puerta.",
   "Llamar premium, luxe, VIP o económico. El precio es un número, no un adjetivo.",
   "Disfrazar la casa de París con un «Maison», ni de zoco con caligrafía que nadie de la tienda sabe leer.",
-  "Usar oro, mármol, corona, león, mezquita, humo de estudio o foil como si fueran obligatorios.",
+  "Cubrir una pieza de dorado, foil, glitter o mármol veteado. El bronce es un hilo mate. Si la pieza grita dinero, no es Mirra.",
   "Esconder un tester, un decant o una presentación sin celofán.",
   "Tachar un precio al lado de otro para que la marca parezca una promo permanente.",
   "Publicar un logo provisorio de otra estética mientras el isotipo se dibuja. Hasta entonces, el wordmark tipográfico es la marca.",
 ] as const
 
-export const cssTokens = `/* Cálamo — tokens de color
-   Papel, tinta, cardenillo y azafrán son la marca.
-   El resto sostiene la lectura o etiqueta una sala. */
+export const cssTokens = `/* Mirra — tokens de color
+   Marfil, ónix, granate y bronce mate son la marca.
+   El bronce nunca es un fondo. Cuero y noche solo etiquetan una sala. */
 
 :root {
-  --papel: #E6D9C8;
-  --hueso: #F3EEE6;
-  --tinta: #1A1613;
-  --humo: #524A43;
-  --cana: #CDBFA6;
-  --cardenillo: #0E6B5E;
-  --cardenillo-ink: #085248;
-  --azafran: #C6531F;
-  --resina: #7A3140;
-  --hiel: #2C384C;
-  --miel: #8A5A32; /* solo imagen: la mancha del blotter. No es color de interfaz */
+  --marfil: #F3EEE6;
+  --crema: #FBF8F4;
+  --onix: #12100E;
+  --sombra: #5E564E;
+  --piedra: #D4CBBF;
+  --granate: #6B2434;
+  --granate-ink: #5C1E2C;
+  --bronce: #8F785C;
+  --cuero: #5C4038;
+  --noche: #1C2433;
+  --resina-imagen: #6E4A38; /* solo la mancha de una foto. No es color de interfaz */
 }
 `

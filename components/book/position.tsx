@@ -22,7 +22,7 @@ const territories = [
   },
   {
     axis: "Oficio · dos culturas",
-    title: "Cálamo",
+    title: "Mirra",
     text: "Las dos salas, con nombre propio, la misma luz y ninguna por encima de la otra.",
     ours: true,
   },
@@ -68,7 +68,7 @@ export function Position() {
 
       <div className="mt-12 max-w-3xl border-l-[3px] border-azafran pl-5">
         <p className="font-display text-2xl leading-snug tracking-[-0.03em] text-balance md:text-3xl">
-          Muchas casas árabes dialogan con perfumes europeos famosos. En Cálamo ese diálogo, si se menciona, va después de describir el frasco. Nunca en el título.
+          Muchas casas árabes dialogan con perfumes europeos famosos. En Mirra ese diálogo, si se menciona, va después de describir el frasco. Nunca en el título.
         </p>
         <p className="mt-4 leading-relaxed text-pretty text-humo">
           Si hoy la venta vive de decir «tipo Baccarat», esta marca pide cambiar el orden de las palabras. El perfume puede ser el mismo. El título es el nombre del frasco que vendes: su casa, su concentración, su carácter. El parecido es una ayuda, no la identidad.

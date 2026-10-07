@@ -45,7 +45,7 @@ export function Brief() {
           <DialogContent className="max-h-[min(86svh,860px)] overflow-y-auto bg-hueso sm:max-w-3xl">
             <DialogHeader>
               <DialogTitle className="font-display text-3xl tracking-[-0.03em]">
-                Brief de Cálamo
+                Brief de Mirra
               </DialogTitle>
               <DialogDescription className="text-base text-humo">
                 Texto plano, listo para copiar. Es el mismo archivo que se descarga.
@@ -65,7 +65,7 @@ export function Brief() {
 
       <article className="mt-10 border border-tinta/15 bg-papel p-6 md:p-10">
         <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-humo">
-          Cálamo · brief de símbolo
+          Mirra · brief de símbolo
         </p>
         <p className="mt-4 max-w-2xl text-lg leading-relaxed">{briefIntro}</p>
         <div className="mt-10 space-y-10">
