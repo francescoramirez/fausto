@@ -4,34 +4,34 @@ import { say } from "@/content/brand"
 
 const whatsapp = `Hola. Soy de Mirra, casa de perfume.
 
-Si me cuentas qué usas ahora y a qué hora del día lo usas, te propongo dos lecturas: una de Firma y una de Attar. No tienen que parecerse. Tienen que servirte.
+Cuéntame qué usas y a qué hora del día. Te propongo dos: uno de diseñador y uno árabe.
 
-El frasco se llama como se llama. Si es tester o tira, te lo digo antes del precio.`
+El frasco va con su marca y su nombre. Si es tester o de 10 ml, te lo digo antes del precio.`
 
 const answers = [
   {
     q: "¿Es original?",
-    a: "Sí. En Firma está el perfume de esa casa. En Attar está el perfume de esa casa árabe, con su nombre, no como imitación de otra. Si algo no está, no invento un parecido para cerrar la venta.",
+    a: "Sí. Cada perfume se vende con el nombre de su marca. Si no lo tengo, no invento un parecido.",
   },
   {
     q: "¿A qué se parece?",
-    a: "Te digo la familia y la hora del día. Si de verdad se acerca a algo que ya conoces, lo digo como referencia, después de describirlo. Nunca en lugar del nombre.",
+    a: "Primero digo cómo huele y para qué momento sirve. El parecido, si hace falta, va después.",
   },
   {
     q: "¿Tienes árabes baratos?",
-    a: "Tengo la Sala Attar. Hay precios distintos, como en Firma. No es el cajón de ofertas: es la otra escritura.",
+    a: "Tengo perfumes árabes, con precios distintos, igual que los de diseñador. No son la oferta de la tienda.",
   },
 ]
 
 export function Voice() {
   return (
     <Shell id="voz">
-      <Kicker n="07">Voz</Kicker>
-      <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.02] tracking-[-0.035em] text-balance md:text-6xl">
-        Cómo se habla. Cómo no.
+      <Kicker n="05">Cómo se habla</Kicker>
+      <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.05] tracking-[-0.03em] text-balance md:text-6xl">
+        Claro, y con el nombre del frasco.
       </h2>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-humo">
-        Se tutea. Se nombran los materiales. No se seduce, no se corona a nadie y no se escribe como un anuncio de combo. Los ejemplos usan perfumes reales para que se oiga la voz: no son el surtido.
+        Marca, nombre, concentración y mililitros. El ejemplo de abajo no es el catálogo: es el tono.
       </p>
 
       <div className="mt-12 overflow-hidden border border-tinta/10">
@@ -70,7 +70,7 @@ export function Voice() {
         <div className="lg:col-span-5">
           <h3 className="font-display text-3xl tracking-[-0.03em]">WhatsApp</h3>
           <p className="mt-4 leading-relaxed text-pretty text-humo">
-            El primer mensaje no pide el combo ni manda doce fotos. Pregunta la hora del día y ofrece dos lecturas. El precio llega cuando ya se sabe qué frasco es.
+            Primer mensaje: preguntar qué usa y ofrecer dos opciones. El precio va cuando ya se sabe qué frasco es.
           </p>
           <CopyButton
             value={whatsapp}
@@ -93,9 +93,6 @@ export function Voice() {
         ))}
       </div>
 
-      <p className="mt-10 max-w-3xl text-sm leading-relaxed text-humo">
-        Las notas de los ejemplos siguen las fichas públicas de cada perfume —Terre d’Hermès eau de toilette: naranja, toronja, pimienta, pedernal, vetiver; Khamrah eau de parfum: canela, nuez moscada, dátil, praliné, tonka, vainilla, mirra—. Sirven para ensayar la voz, no como certificado de laboratorio. Si vendes testers, la palabra es tester, en la misma frase que los mililitros.
-      </p>
     </Shell>
   )
 }

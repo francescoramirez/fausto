@@ -37,7 +37,7 @@ export function Shell({
     <section
       id={id}
       className={cn(
-        "scroll-mt-20 border-t border-tinta/10 py-20 md:py-28 xl:scroll-mt-8",
+        "scroll-mt-20 border-t border-tinta/10 py-14 md:py-20 xl:scroll-mt-8",
         className,
       )}
     >

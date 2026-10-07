@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
-import { Cormorant_Garamond, DM_Mono, Literata, Noto_Naskh_Arabic, Outfit } from "next/font/google";
+import { Cormorant_Garamond, DM_Mono, Literata, Outfit } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import "./globals.css";
 
@@ -31,17 +31,10 @@ const dmMono = DM_Mono({
   variable: "--font-dm-mono",
 });
 
-const naskh = Noto_Naskh_Arabic({
-  subsets: ["arabic"],
-  weight: ["500", "600", "700"],
-  display: "swap",
-  variable: "--font-naskh",
-});
-
 export const metadata: Metadata = {
   title: "Mirra — manual de identidad",
   description:
-    "Identidad de una casa de perfume que vende firmas de diseñador y casas árabes. Nombre, voz, paleta de lujo en voz baja y brief para dibujar el símbolo.",
+    "Lo esencial de Mirra, casa de perfume: nombre, colores, letras, logo y cómo hablarle al cliente.",
   openGraph: {
     title: "Mirra — manual de identidad",
     description:
@@ -59,7 +52,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html
       lang="es"
-      className={`${cormorant.variable} ${literata.variable} ${outfit.variable} ${dmMono.variable} ${naskh.variable} h-full antialiased`}
+      className={`${cormorant.variable} ${literata.variable} ${outfit.variable} ${dmMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         {children}

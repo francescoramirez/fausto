@@ -9,14 +9,14 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { briefIntro, briefMarkdown, briefSections } from "@/content/brief"
+import { briefIntro, briefMarkdown } from "@/content/brief"
 
 export function Brief() {
   return (
     <Shell id="brief" className="bg-hueso/50">
-      <Kicker n="14">Brief</Kicker>
+      <Kicker n="07">Brief</Kicker>
       <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.02] tracking-[-0.035em] text-balance md:text-6xl">
-        El encargo para quien dibuja.
+        Para dibujar el logo.
       </h2>
       <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-humo">{briefIntro}</p>
 
@@ -63,36 +63,9 @@ export function Brief() {
         </Dialog>
       </div>
 
-      <article className="mt-10 border border-tinta/15 bg-papel p-6 md:p-10">
-        <p className="font-mono text-[11px] uppercase tracking-[0.18em] text-humo">
-          Mirra · brief de símbolo
-        </p>
-        <p className="mt-4 max-w-2xl text-lg leading-relaxed">{briefIntro}</p>
-        <div className="mt-10 space-y-10">
-          {briefSections.map((section) => (
-            <section key={section.heading}>
-              <h3 className="font-display text-3xl tracking-[-0.03em]">{section.heading}</h3>
-              <div className="mt-4 max-w-3xl space-y-4">
-                {section.blocks.map((block, index) =>
-                  block.type === "p" ? (
-                    <p key={index} className="leading-relaxed text-pretty">
-                      {block.text}
-                    </p>
-                  ) : (
-                    <ul key={index} className="space-y-2">
-                      {block.items.map((item) => (
-                        <li key={item} className="border-t border-tinta/10 pt-2 leading-relaxed">
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                  ),
-                )}
-              </div>
-            </section>
-          ))}
-        </div>
-      </article>
+      <p className="mt-8 max-w-xl text-sm leading-relaxed text-humo">
+        El texto repite las decisiones de arriba, en un archivo para pegar en la herramienta de diseño.
+      </p>
     </Shell>
   )
 }
