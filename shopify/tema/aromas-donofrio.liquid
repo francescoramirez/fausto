@@ -1,0 +1,45 @@
+{% comment %}
+  Aromas Donofrio: letras del manual de marca.
+  Se carga en layout/theme.liquid después de 'color-palette'.
+  Cormorant Garamond 600 para títulos, Literata para textos,
+  Outfit para menú, botones y precios, DM Mono para concentración y ml.
+{% endcomment %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=DM+Mono&family=Literata:wght@400&family=Outfit:wght@400;500&display=swap"
+  rel="stylesheet"
+>
+<style>
+  :root {
+    --font-heading--family: 'Cormorant Garamond', Garamond, 'Times New Roman', serif;
+    --font-heading--weight: 600;
+    --font-heading--style: normal;
+    --font-body--family: 'Literata', Georgia, serif;
+    --font-body--weight: 400;
+    --font-body--style: normal;
+    --font-subheading--family: 'Outfit', system-ui, sans-serif;
+    --font-subheading--weight: 400;
+    --font-subheading--style: normal;
+    --font-accent--family: 'Outfit', system-ui, sans-serif;
+    --font-accent--weight: 500;
+    --font-accent--style: normal;
+    --font-data--family: 'DM Mono', ui-monospace, monospace;
+  }
+
+  .ad-dato {
+    font-family: var(--font-data--family);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85em;
+  }
+
+  .ad-linea {
+    display: block;
+    width: 40px;
+    height: 1px;
+    background: #8f785c;
+    border: 0;
+    margin: 1rem 0;
+  }
+</style>

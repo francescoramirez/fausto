@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { ReedMark } from "@/components/reed-mark";
 
 export default function Error({
   reset,
@@ -12,13 +11,11 @@ export default function Error({
   return (
     <main className="flex min-h-full flex-col justify-center px-6 py-24">
       <div className="mx-auto max-w-lg">
-        <ReedMark className="size-16" />
-        <h1 className="mt-8 font-display text-5xl leading-[0.95] tracking-[-0.04em] text-balance">
+        <p className="font-display text-3xl tracking-[-0.02em]">Aromas Donofrio</p>
+        <h1 className="mt-8 font-display text-5xl leading-[0.95] tracking-[-0.02em] text-balance">
           Esta página no se pudo leer.
         </h1>
-        <p className="mt-4 text-lg leading-relaxed text-humo">
-          No es el perfume: es el manual. Vale la pena intentar otra vez.
-        </p>
+        <p className="mt-4 text-lg leading-relaxed text-sombra">Probá de nuevo.</p>
         <Button
           type="button"
           onClick={() => reset()}

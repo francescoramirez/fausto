@@ -53,7 +53,7 @@ export function CopyButton({
       onClick={async () => {
         const ok = await writeClipboard(value)
         if (ok) toast.success(toastMessage)
-        else toast.error("No se pudo copiar. Selecciona el texto y cópialo a mano.")
+        else toast.error("No se pudo copiar. Seleccioná el texto y copialo a mano.")
       }}
     >
       {label}

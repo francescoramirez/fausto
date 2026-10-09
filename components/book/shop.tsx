@@ -1,55 +1,48 @@
-import { Kicker, Shell } from "@/components/book/kicker"
+import { Kicker, Lead, Shell, Title } from "@/components/book/kicker"
 import { StoreDraft } from "@/components/book/store-draft"
-import { refusals } from "@/content/brand"
 
 const rules = [
   {
-    title: "Menú",
-    text: "Diseñador, Árabes y Tiras. No se abre con «árabes desde…».",
+    title: "El orden de la ficha",
+    text: "Marca, nombre, concentración y mililitros, una frase, precio. Siempre en ese orden.",
   },
   {
-    title: "Ficha",
-    text: "Marca, nombre, concentración, mililitros, una frase y el precio. Si es tester, se dice ahí.",
+    title: "El título",
+    text: "El nombre del frasco: «Khamrah», no «tipo [otra marca]». La marca va arriba, aparte.",
+  },
+  {
+    title: "Tester",
+    text: "Se dice en los datos del frasco, antes del precio: «EDT · 100 ml · tester».",
   },
   {
     title: "Precio",
-    text: "Un número. Si hay oferta, va en una línea aparte, no tachada al lado del nombre.",
+    text: "Un número. Si hay rebaja, una línea aparte, sin tachar al lado del nombre.",
+  },
+  {
+    title: "Menú",
+    text: "Diseñador y Árabes. Los testers van en su sección, con «tester» en la ficha. Ni hombre y mujer, ni «árabes desde…».",
   },
 ]
 
 export function Shop() {
   return (
-    <Shell id="tienda">
-      <Kicker n="06">Tienda</Kicker>
-      <h2 className="mt-4 max-w-3xl font-display text-4xl leading-[1.05] tracking-[-0.03em] text-balance md:text-6xl">
-        Cómo se va a ver la tienda.
-      </h2>
-      <p className="mt-6 max-w-2xl text-lg leading-relaxed text-pretty text-humo">
-        Todavía no está hecha. El menú y la ficha ya sí.
-      </p>
+    <Shell id="producto">
+      <Kicker n="04">Un producto</Kicker>
+      <Title>Así se escribe un frasco.</Title>
+      <Lead>La tienda todavía no está hecha. La ficha y el menú ya están decididos.</Lead>
 
       <div className="mt-10 grid items-start gap-10 lg:grid-cols-12">
         <div className="lg:col-span-5">
           <StoreDraft />
         </div>
-        <div className="lg:col-span-7">
-          <ul className="space-y-6">
-            {rules.map((rule) => (
-              <li key={rule.title}>
-                <h3 className="font-display text-2xl tracking-[-0.03em]">{rule.title}</h3>
-                <p className="mt-2 leading-relaxed text-pretty text-humo">{rule.text}</p>
-              </li>
-            ))}
-          </ul>
-          <h3 className="mt-10 font-display text-2xl tracking-[-0.03em]">No hacer</h3>
-          <ul className="mt-4 border-t border-tinta/15">
-            {refusals.map((item) => (
-              <li key={item} className="border-b border-tinta/15 py-3 leading-relaxed">
-                {item}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="lg:col-span-7">
+          {rules.map((rule) => (
+            <li key={rule.title} className="border-t border-onix/15 py-5 first:border-t-0 first:pt-0">
+              <h3 className="font-display text-2xl tracking-[-0.02em]">{rule.title}</h3>
+              <p className="mt-2 leading-relaxed text-pretty text-sombra">{rule.text}</p>
+            </li>
+          ))}
+        </ul>
       </div>
     </Shell>
   )

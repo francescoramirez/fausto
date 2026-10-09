@@ -1,10 +1,7 @@
 "use client"
 
-import { CopyButton } from "@/components/copy-button"
-import { ReedMark } from "@/components/reed-mark"
 import { Button } from "@/components/ui/button"
 import { chapters } from "@/content/brand"
-import { briefMarkdown } from "@/content/brief"
 import { cn } from "@/lib/utils"
 import { MenuIcon, XIcon } from "lucide-react"
 import { useEffect, useState } from "react"
@@ -60,14 +57,14 @@ export function SiteNav() {
               className={cn(
                 "flex items-baseline gap-3 rounded-[2px] px-2 py-1.5 font-sans text-[13px] transition-colors",
                 current
-                  ? "bg-hueso text-tinta"
-                  : "text-humo hover:bg-hueso/70 hover:text-tinta",
+                  ? "bg-crema text-onix"
+                  : "text-sombra hover:bg-crema/70 hover:text-onix",
               )}
             >
               <span
                 className={cn(
-                  "w-6 shrink-0 font-mono text-[10px] tracking-[0.14em]",
-                  current ? "text-cardenillo-ink" : "text-humo/70",
+                  "w-6 shrink-0 font-sans text-[12px]",
+                  current ? "text-granate-profundo" : "text-sombra/70",
                 )}
               >
                 {chapter.n}
@@ -86,24 +83,18 @@ export function SiteNav() {
         Saltar al contenido
       </a>
 
-      <header className="no-print fixed inset-x-0 top-0 z-40 flex h-14 items-center justify-between gap-3 border-b border-tinta/10 bg-papel/90 px-4 backdrop-blur-md xl:hidden">
-        <a href="#portada" className="font-display text-[1.75rem] font-semibold leading-none tracking-[-0.02em]">
-          Mirra
+      <header className="no-print fixed inset-x-0 top-0 z-40 flex h-14 items-center justify-between gap-3 border-b border-onix/10 bg-marfil/90 px-4 backdrop-blur-md xl:hidden">
+        <a href="#portada" className="font-display text-[1.75rem] leading-none tracking-[-0.02em]">
+          Aromas Donofrio
         </a>
         <div className="flex items-center gap-2">
-          <CopyButton
-            value={briefMarkdown}
-            label="Brief"
-            toastMessage="Brief copiado. Listo para pegar en el diseño."
-            className="h-9 px-3"
-          />
           <Button
             type="button"
             variant="outline"
             size="icon"
             aria-expanded={open}
             aria-controls={open ? "indice" : undefined}
-            className="size-11 border-tinta/20 bg-hueso"
+            className="size-11 border-onix/20 bg-crema"
             onClick={() => setOpen((value) => !value)}
           >
             {open ? <XIcon /> : <MenuIcon />}
@@ -115,23 +106,22 @@ export function SiteNav() {
       {open ? (
         <nav
           id="indice"
-          className="no-print fixed inset-0 z-30 overflow-y-auto bg-papel px-5 pt-20 pb-16 xl:hidden"
+          className="no-print fixed inset-0 z-30 overflow-y-auto bg-marfil px-5 pt-20 pb-16 xl:hidden"
         >
-          <p className="mb-4 font-mono text-[10px] uppercase tracking-[0.22em] text-humo">
-            Índice del manual
+          <p className="mb-4 font-sans text-[12px] uppercase tracking-[0.16em] text-sombra">
+            Índice
           </p>
           {links}
         </nav>
       ) : null}
 
-      <aside className="no-print fixed inset-y-0 left-0 z-40 hidden w-60 flex-col border-r border-tinta/10 bg-papel/95 px-3 py-6 backdrop-blur-md xl:flex">
-        <a href="#portada" className="flex items-center gap-2 px-2">
-          <ReedMark className="size-8" title="Mirra, casa de perfume" />
+      <aside className="no-print fixed inset-y-0 left-0 z-40 hidden w-60 flex-col border-r border-onix/10 bg-marfil/95 px-3 py-6 backdrop-blur-md xl:flex">
+        <a href="#portada" className="px-2">
           <span>
-            <span className="block font-display text-[1.85rem] font-semibold leading-none tracking-[-0.02em]">
-              Mirra
+            <span className="block font-display text-[1.6rem] leading-none tracking-[-0.02em]">
+              Aromas Donofrio
             </span>
-            <span className="mt-1 block font-sans text-[10px] uppercase tracking-[0.22em] text-humo">
+            <span className="mt-1 block font-sans text-[11px] uppercase tracking-[0.2em] text-sombra">
               Casa de perfume
             </span>
           </span>
@@ -139,12 +129,6 @@ export function SiteNav() {
         <nav className="mt-8 flex-1 overflow-y-auto pr-1" aria-label="Secciones">
           {links}
         </nav>
-        <CopyButton
-          value={briefMarkdown}
-          label="Copiar brief"
-          toastMessage="Brief copiado. Listo para pegar en el diseño."
-          className="mt-4 w-full"
-        />
       </aside>
     </>
   )

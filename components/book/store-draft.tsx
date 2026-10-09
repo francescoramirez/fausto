@@ -6,103 +6,80 @@ import { cn } from "@/lib/utils"
 import { toast } from "sonner"
 import { useState } from "react"
 
-const rooms = [
+const sections = [
   {
-    id: "firma",
+    id: "disenador",
     label: "Diseñador",
-    kicker: "Diseñador",
-    title: "Perfumes de diseñador.",
-    text: "Con el nombre de su marca.",
-    product: "Terre d’Hermès",
     house: "Hermès",
-    meta: "Eau de toilette · 100 ml",
-    line: "Naranja amarga sobre piedra. Para el día.",
+    product: "Terre d’Hermès",
+    meta: "EDT · 100 ml · tester",
+    line: "Naranja, vetiver y piedra. Para el día.",
+    price: "$ 98.000",
   },
   {
     id: "arabes",
     label: "Árabes",
-    kicker: "Árabes",
-    title: "Perfumes árabes.",
-    text: "Con el nombre de su marca.",
+    house: "Lattafa",
     product: "Khamrah",
-    house: "Lattafa",
-    meta: "Eau de parfum · 100 ml",
-    line: "Dátil, canela, tonka. No es un oud.",
-  },
-  {
-    id: "tiras",
-    label: "Tiras",
-    kicker: "Tiras",
-    title: "El mismo perfume, menos vidrio.",
-    text: "5 o 10 ml. No es un combo.",
-    product: "Tira · Khamrah",
-    house: "Lattafa",
-    meta: "Eau de parfum · 10 ml",
-    line: "El nombre no cambia porque el vidrio sea menor.",
+    meta: "EDP · 100 ml",
+    line: "Dátil, canela y tonka. Dulce, para la noche.",
+    price: "$ 59.000",
   },
 ] as const
 
 export function StoreDraft() {
-  const [roomId, setRoomId] = useState<(typeof rooms)[number]["id"]>("firma")
-  const room = rooms.find((item) => item.id === roomId) ?? rooms[0]
+  const [id, setId] = useState<(typeof sections)[number]["id"]>("disenador")
+  const item = sections.find((section) => section.id === id) ?? sections[0]
 
   return (
     <div className="mx-auto max-w-[24rem]">
-      <div className="border border-tinta/20 bg-tinta p-2 shadow-[0_24px_60px_rgba(26,22,19,0.18)]">
-        <div className="bg-papel px-4 pt-4 pb-5 text-tinta">
-          <div className="flex items-baseline justify-between">
-            <p className="font-display text-3xl font-semibold leading-none tracking-[-0.03em]">Mirra</p>
-            <p className="font-sans text-[9px] uppercase tracking-[0.18em] text-humo">Casa de perfume</p>
-          </div>
-          <div className="mt-4 flex gap-2" role="tablist" aria-label="Salas de la tienda">
-            {rooms.map((item) => (
-              <button
-                key={item.id}
-                type="button"
-                role="tab"
-                aria-selected={item.id === room.id}
-                onClick={() => setRoomId(item.id)}
-                className={cn(
-                  "h-9 flex-1 font-sans text-[11px] uppercase tracking-[0.14em]",
-                  item.id === room.id ? "bg-tinta text-hueso" : "bg-hueso text-humo",
-                )}
-              >
-                {item.label}
-              </button>
-            ))}
-          </div>
-          <p className="mt-6 font-mono text-[10px] uppercase tracking-[0.18em] text-cardenillo-ink">
-            {room.kicker}
-          </p>
-          <p className="mt-2 font-display text-4xl leading-[0.95] tracking-[-0.04em] text-balance">
-            {room.title}
-          </p>
-          <p className="mt-3 text-sm leading-relaxed text-humo">{room.text}</p>
+      <div className="border border-onix/20 bg-marfil px-4 pt-4 pb-5 text-onix">
+        <p className="font-display text-3xl leading-none tracking-[-0.02em]">Aromas Donofrio</p>
+        <p className="mt-1 font-sans text-[11px] uppercase tracking-[0.2em] text-sombra">Casa de perfume</p>
+        <div className="mt-1 h-[2px] w-10 bg-bronce" aria-hidden />
 
-          <article className="mt-6 bg-hueso p-4">
-            <div className="flex h-36 items-end bg-cana/50 p-3">
-              <span className="h-24 w-8 bg-tinta/85" aria-hidden />
-            </div>
-            <p className="mt-4 font-sans text-xs text-humo">{room.house}</p>
-            <h3 className="font-display text-2xl tracking-[-0.03em]">{room.product}</h3>
-            <p className="mt-1 font-mono text-[10px] uppercase tracking-[0.14em] text-humo">{room.meta}</p>
-            <p className="mt-3 text-sm leading-relaxed">{room.line}</p>
-            <Button
+        <div className="mt-5 flex gap-2" role="tablist" aria-label="Secciones de la tienda">
+          {sections.map((section) => (
+            <button
+              key={section.id}
               type="button"
-              className={cn(actionClass, "mt-4 w-full")}
-              onClick={() =>
-                toast("Esto es una muestra de la ficha. La tienda todavía no vende.", {
-                  description: room.product,
-                })
-              }
+              role="tab"
+              aria-selected={section.id === item.id}
+              onClick={() => setId(section.id)}
+              className={cn(
+                "h-10 flex-1 font-sans text-[13px] tracking-[0.04em]",
+                section.id === item.id ? "bg-onix text-crema" : "bg-crema text-sombra",
+              )}
             >
-              Agregar
-            </Button>
-          </article>
+              {section.label}
+            </button>
+          ))}
         </div>
+
+        <article className="mt-5 bg-crema p-4">
+          <div className="flex h-36 items-end bg-piedra/50 p-3">
+            <span className="h-24 w-8 bg-onix/85" aria-hidden />
+          </div>
+          <p className="mt-4 font-sans text-sm text-sombra">{item.house}</p>
+          <h3 className="font-display text-3xl leading-tight tracking-[-0.02em]">{item.product}</h3>
+          <p className="mt-1 font-mono text-xs uppercase tracking-[0.12em] text-sombra">{item.meta}</p>
+          <p className="mt-3 text-sm leading-relaxed">{item.line}</p>
+          <p className="mt-4 font-sans text-xl">{item.price}</p>
+          <Button
+            type="button"
+            className={cn(actionClass, "mt-3 w-full")}
+            onClick={() =>
+              toast("Es una muestra de la ficha. La tienda todavía no vende.", {
+                description: item.product,
+              })
+            }
+          >
+            Comprar
+          </Button>
+        </article>
       </div>
-      <p className="mt-4 text-center font-mono text-[10px] uppercase tracking-[0.16em] text-humo">
-        Borrador de portada · ancho de teléfono
+      <p className="mt-4 text-center font-sans text-xs text-sombra">
+        Ejemplo con precios inventados. Ancho de teléfono.
       </p>
     </div>
   )

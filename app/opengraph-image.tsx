@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Mirra, casa de perfume. Manual de identidad.";
+export const alt = "Aromas Donofrio, casa de perfume. Manual de identidad.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -23,7 +23,7 @@ export default function OpenGraphImage() {
           Casa de perfume
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 132, lineHeight: 0.86, letterSpacing: -2 }}>Mirra</div>
+          <div style={{ fontSize: 120, lineHeight: 0.9, letterSpacing: -2 }}>Aromas Donofrio</div>
           <div style={{ fontSize: 36, marginTop: 28, color: "#6B2434" }}>
             Lujo en voz baja.
           </div>

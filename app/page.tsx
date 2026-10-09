@@ -1,9 +1,8 @@
-import { Brief } from "@/components/book/brief";
 import { Essentials } from "@/components/book/essentials";
 import { Hero } from "@/components/book/hero";
+import { Limits } from "@/components/book/limits";
 import { Palette } from "@/components/book/palette";
 import { Shop } from "@/components/book/shop";
-import { Symbol } from "@/components/book/symbol";
 import { TypeSpecimen } from "@/components/book/type";
 import { Voice } from "@/components/book/voice";
 import { SiteNav } from "@/components/site-nav";
@@ -17,10 +16,9 @@ export default function Home() {
         <Essentials />
         <Palette />
         <TypeSpecimen />
-        <Symbol />
-        <Voice />
         <Shop />
-        <Brief />
+        <Voice />
+        <Limits />
       </main>
     </>
   );

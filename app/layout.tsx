@@ -6,8 +6,8 @@ import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
-  style: ["normal", "italic"],
+  weight: ["600"],
+  style: ["normal"],
   display: "swap",
   variable: "--font-cormorant",
 });
@@ -32,13 +32,13 @@ const dmMono = DM_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mirra — manual de identidad",
+  title: "Aromas Donofrio — manual de identidad",
   description:
-    "Lo esencial de Mirra, casa de perfume: nombre, colores, letras, logo y cómo hablarle al cliente.",
+    "Lo esencial de Aromas Donofrio, casa de perfume: nombre, colores, letras, cómo escribir un producto y un mensaje, y qué no hacer.",
   openGraph: {
-    title: "Mirra — manual de identidad",
+    title: "Aromas Donofrio — manual de identidad",
     description:
-      "Lujo en voz baja. Manual de marca para una casa de perfume de diseñador y árabe.",
+      "Lujo en voz baja. Manual de marca de una casa de perfume de diseñador y árabes.",
     locale: "es_419",
     type: "website",
   },
